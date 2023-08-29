@@ -50,6 +50,62 @@
 
 
 
+    
+        <script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        
+            load: ['[tex]/mhchem'],
+        
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        
+            packages: {'[+]': ['mhchem']},
+        
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
           
 
 
@@ -57,7 +113,7 @@
     
     <title>
         
-            Hello World | Hexo
+            Test | Hexo
         
     </title>
     
@@ -218,19 +274,19 @@
     
     
       <div class="post-header"> 
-  <a class="post-header-title" href="/hello-world/">Hello World</a>
+  <a class="post-header-title" href="/test.html">Test</a>
   <div class="post-header-meta">
     <span>
       <span class="iconfont icon-calendar"></span>
-      Posted on:&nbsp;2023-08-28
+      Posted on:&nbsp;2023-08-29
     </span>
     <span>
       <span class="iconfont icon-calendar-check"></span>
-      Edited on:&nbsp;2023-08-28
+      Edited on:&nbsp;2023-08-29
     </span>
     <span>
       <span class="iconfont icon-folder"></span>
-      In:&nbsp;
+      In:&nbsp;<a class="category-link" href="/categories/Test/">Test</a>
     </span>
     
       <span>
@@ -252,25 +308,25 @@
       <button class="mdui-btn mdui-btn-icon mdui-text-color-teal" mdui-menu="{target: '#share_menu', align: 'right'}"><i class="iconfont icon-share"></i></button>
       <ul class="mdui-menu" id="share_menu">
         <li class="mdui-menu-item">
-          <a href="http://service.weibo.com/share/share.php?appkey=&title=Hello World&url=https://zeekliu.github.io/hello-world/&pic=https://zeekliu.github.io/null&searchPic=false&style=simple" target="_blank" class="mdui-ripple">Share to Weibo</a>
+          <a href="http://service.weibo.com/share/share.php?appkey=&title=Test&url=https://zeekliu.github.io/test.html&pic=https://zeekliu.github.io/null&searchPic=false&style=simple" target="_blank" class="mdui-ripple">Share to Weibo</a>
         </li>
         <li class="mdui-menu-item">
-          <a href="https://twitter.com/intent/tweet?text=Hello World&url=https://zeekliu.github.io/hello-world/&via=John Doe" target="_blank" class="mdui-ripple">Share to Twitter</a>
+          <a href="https://twitter.com/intent/tweet?text=Test&url=https://zeekliu.github.io/test.html&via=John Doe" target="_blank" class="mdui-ripple">Share to Twitter</a>
         </li>
         <li class="mdui-menu-item">
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://zeekliu.github.io/hello-world/" target="_blank" class="mdui-ripple">Share to Facebook</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://zeekliu.github.io/test.html" target="_blank" class="mdui-ripple">Share to Facebook</a>
         </li>
         <li class="mdui-menu-item">
-          <a href="https://plus.google.com/share?url=https://zeekliu.github.io/hello-world/" target="_blank" class="mdui-ripple">Share to Google+</a>
+          <a href="https://plus.google.com/share?url=https://zeekliu.github.io/test.html" target="_blank" class="mdui-ripple">Share to Google+</a>
         </li>
         <li class="mdui-menu-item">
-          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://zeekliu.github.io/hello-world/&title=Hello World" target="_blank" class="mdui-ripple">Share to LinkedIn</a>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://zeekliu.github.io/test.html&title=Test" target="_blank" class="mdui-ripple">Share to LinkedIn</a>
         </li>
         <li class="mdui-menu-item">
-          <a href="http://connect.qq.com/widget/shareqq/index.html?site=Hexo&title=Hello World&summary=&pics=https://zeekliu.github.io/null&url=https://zeekliu.github.io/hello-world/" target="_blank" class="mdui-ripple">Share to QQ</a>
+          <a href="http://connect.qq.com/widget/shareqq/index.html?site=Hexo&title=Test&summary=&pics=https://zeekliu.github.io/null&url=https://zeekliu.github.io/test.html" target="_blank" class="mdui-ripple">Share to QQ</a>
         </li>
         <li class="mdui-menu-item">
-          <a href="https://telegram.me/share/url?url=https://zeekliu.github.io/hello-world/&text=Hello World" target="_blank" class="mdui-ripple">Share to Telegram</a>
+          <a href="https://telegram.me/share/url?url=https://zeekliu.github.io/test.html&text=Test" target="_blank" class="mdui-ripple">Share to Telegram</a>
         </li>
       </ul>
     
@@ -280,22 +336,38 @@
   
   
   
+  <div class="post-tags">
+    
+      <i class="iconfont icon-tag">
+        <a rel="tag" href = /tags/Test/ >Test</a>
+      </i>
+    
+  </div>
+
   
   <div class="mdui-card-content mdui-typo mdui-p-x-4">
-    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
-<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <h4 id="test"><a class="markdownIt-Anchor" href="#test"></a> Test</h4>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">1+1=2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span></p>
+<p><strong>123</strong></p>
+<p><em>GitHub</em></p>
+<blockquote>
+<p>Pages</p>
+</blockquote>
+<ol>
+<li>
+<p>B</p>
+</li>
+<li>
+<p>L</p>
+</li>
+<li>
+<p>O</p>
+</li>
+<li>
+<p>G</p>
+</li>
+</ol>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br></pre></td></tr></table></figure>
 
   </div>
   <!--文末结束语-->
@@ -308,11 +380,11 @@
   
   <nav>
     
-      <a rel="prev" class="post-nav-item mdui-float-left" href="/Test/">
-        <i class="iconfont icon-angle-left"></i>
-        <span>test</span>
-      </a>
     
+      <a rel="next" class="post-nav-item mdui-float-right" href="/index.html">
+        <span>Hello World</span>
+        <i class="iconfont icon-angle-right"></i>
+      </a>
     
   </nav>
 </article>
@@ -324,8 +396,8 @@
     <button class="mdui-fab mdui-ripple mdui-color-teal" mdui-menu="{target: '#toc'}"><i class="iconfont icon-list"></i></button>
     <ul class="mdui-menu" id="toc">
       <li class="mdui-menu-item">
-        <a href="/hello-world/" id="toc-header" class="mdui-ripple">Table of Contents</a>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#quick-start"><span class="toc-number">1.</span> <span class="toc-text"> Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text"> Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#run-server"><span class="toc-number">1.2.</span> <span class="toc-text"> Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text"> Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text"> Deploy to remote sites</span></a></li></ol></li></ol>
+        <a href="/test.html" id="toc-header" class="mdui-ripple">Table of Contents</a>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#test"><span class="toc-number">1.</span> <span class="toc-text"> Test</span></a></li></ol>
       </li>
     </ul>
   </div>
