@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"zeekliu.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"zeekliu.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="本文记述时间为 2023 年（令和 5 年）7 月 28 日   就在这时，我踏上了前往机场的旅途。 但南京最近的天气一直令人堪忧，我会不会赶上大暴雨？ 尽管有这样的想法，我还是很激动，上一次坐飞机是三年半前了。 于是，我坐上了接我们的车去了机场。 然后，很快我们到了机场，但显然我对这里已经生疏了很多，就像从未来过一样。 等我们过了安检，我才想起来一些，想起来那个曾经我玩过的儿童乐园。 然后，我">
 <meta property="og:type" content="article">
@@ -74,7 +74,119 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --></head>
+<!-- hexo injector head_end end --><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -261,6 +373,13 @@
     </span>
 
   
+    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
 </div>
 
         </div>
@@ -272,7 +391,7 @@
     <div class="post-body" itemprop="articleBody"><blockquote>
 <p><strong>本文记述时间为 2023 年（令和 5 年）7 月 28 日</strong></p>
 </blockquote>
-<hr />
+<hr>
 <p>就在这时，我踏上了前往机场的旅途。</p>
 <p>但南京最近的天气一直令人堪忧，我会不会赶上大暴雨？</p>
 <p>尽管有这样的想法，我还是很激动，上一次坐飞机是<strong>三年半前</strong>了。</p>
@@ -281,7 +400,7 @@
 <p>等我们过了安检，我才想起来一些，想起来那个曾经我玩过的儿童乐园。</p>
 <p>然后，我们来到了 7 登机口，但看外面不停的雨和不少航班延误的，我们这趟估计也凶多吉少。</p>
 <p>果不其然，<strong>延误</strong>。</p>
-<img src="/img/Japan-2307/NH-2307-1001.jpg" height="420" width="300" />
+<img src="/img/Japan-2307/NH-2307-1001.jpg" height="420" width="300">
 <p><strong>不过呢，这其实是一种幸运。</strong></p>
 <p>因为，就在我们刚离开的时候，台风就来到了南京，而我们在大阪安然无恙，非常悠闲。</p>
 <p>这也许也是某种特别的安排。</p>
@@ -299,23 +418,23 @@
 <p>基本上是去神户的。</p>
 <p>只不过知道的人很少，下次去神户可以试试。</p>
 </blockquote>
-<img src="/img/Japan-2307/NH-2307-1019.jpg" height="800" width="1000" />
+<img src="/img/Japan-2307/NH-2307-1019.jpg" height="800" width="1000">
 <p>特急 はるか，涂装蛮好看的。</p>
-<img src="/img/Japan-2307/NH-2307-1014.jpg" height="800" width="1000" />
+<img src="/img/Japan-2307/NH-2307-1014.jpg" height="800" width="1000">
 <p>南海电铁的圆窗户看着还挺かわいい的</p>
-<img src="/img/Japan-2307/NH-2307-1005.jpg" height="800" width="1000" />
+<img src="/img/Japan-2307/NH-2307-1005.jpg" height="800" width="1000">
 <p>关空 JR 站台。</p>
-<img src="/img/Japan-2307/NH-2307-1006.jpg" height="420" width="480" />
-<img src="/img/Japan-2307/NH-2307-1002.jpg" height="420" width="480" />
-<img src="/img/Japan-2307/NH-2307-1011.jpg" height="420" width="480" />
-<img src="/img/Japan-2307/NH-2307-1017.jpg" height="420" width="480" />
+<img src="/img/Japan-2307/NH-2307-1006.jpg" height="420" width="480">
+<img src="/img/Japan-2307/NH-2307-1002.jpg" height="420" width="480">
+<img src="/img/Japan-2307/NH-2307-1011.jpg" height="420" width="480">
+<img src="/img/Japan-2307/NH-2307-1017.jpg" height="420" width="480">
 <p>欢迎来到坑了无数国人的日根野站。（有多少人曾经被拉到和歌山过）</p>
 <p>然后从这里列车上了阪和线和大阪环状线。</p>
 <p>拍了几个站牌：</p>
 <img src="/img/Japan-2307/NH-2307-1003.jpg" alt="" width="450">
 <img src="/img/Japan-2307/NH-2307-1010.jpg" title="" alt="" width="450">
 <p>当时已经有点晚了，所以人不是很多。</p>
-<img src="/img/Japan-2307/NH-2307-1009.jpg"/>
+<img src="/img/Japan-2307/NH-2307-1009.jpg">
 <p>宇宙中心大阪到了（左上角<strong>福知山新干线</strong>）</p>
 <p>然后去找酒店，结果大半天没找到，不得不说大阪站附近晚上还是相当热闹的，相当可以。</p>
 <p>最后终于找到了。</p>
@@ -327,7 +446,7 @@
 <p>还是<strong>燒鳥</strong>（可以理解为炸串）好吃。</p>
 <p>不是很懂美食，就只能说这么多了。</p>
 <p>【完】</p>
-<hr />
+<hr>
 <p>初次写于 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">2023/07/31</mtext></mrow><annotation encoding="application/x-tex">\texttt{2023/07/31}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord text"><span class="mord texttt">2023/07/31</span></span></span></span></span>，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">2023/08/24</mtext></mrow><annotation encoding="application/x-tex">\texttt{2023/08/24}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord text"><span class="mord texttt">2023/08/24</span></span></span></span></span> 大规模修改。</p>
 <!-- flag of hidden posts -->
     </div>
@@ -368,6 +487,24 @@
     </span>
     <span class="author" itemprop="copyrightHolder">Zeek Liu</span>
   </div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
   <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
   </div>
 
@@ -393,6 +530,7 @@
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
@@ -405,6 +543,7 @@
 
 
   
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
