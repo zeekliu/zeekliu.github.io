@@ -25,6 +25,8 @@
 
 
 
+    <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
+
 
 
     <link rel="dns-prefetch" href="https://.disqus.com"/>
@@ -88,7 +90,7 @@
         
             
                 <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
-                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/monokai-sublime.min.css?ki5YzEsiSDBc8+dpRlh8rw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
             
         
 
@@ -472,7 +474,7 @@ mjx-container[display="true"] + br {
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E6%9C%AC%E7%AB%99-PDF%EF%BC%9A"><span class="post-toc-number">1.</span> <span class="post-toc-text">本站 PDF：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#GitHub-Repositories"><span class="post-toc-number">2.</span> <span class="post-toc-text">GitHub Repositories:</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E6%9C%AC%E7%AB%99-pdf"><span class="post-toc-text"> 本站 PDF：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#github-repositories"><span class="post-toc-text"> GitHub Repositories:</span></a></li></ol>
     </ul>
     
 
@@ -495,9 +497,9 @@ mjx-container[display="true"] + br {
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
             <script type="text/ls-javascript" id="post-thumbnail-script">
-    var randomNum = Math.floor(Math.random() * 19 + 1);
+    var randomNum = Math.floor(Math.random() * 52 + 1);
 
-    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.jpg');
     $('.post_thumbnail-random').addClass('lazy');
 </script>
 
@@ -561,41 +563,28 @@ mjx-container[display="true"] + br {
     
 
     
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
 
     <!-- Share Weibo -->
-    
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=《线性代数的艺术》—— 史上最易懂的线性代数讲义&url=https://zeekliu.github.io/math/the-art-of-linear-algebra&pic=https://zeekliu.github.io/img/favicon.svg&searchPic=false&style=simple" target="_blank">
-            <li class="mdl-menu__item">
-                分享到微博
-            </li>
-        </a>
     
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=《线性代数的艺术》—— 史上最易懂的线性代数讲义&url=https://zeekliu.github.io/math/the-art-of-linear-algebra&via=Zeek Liu" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Twitter
-            </li>
-        </a>
-    
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://zeekliu.github.io/math/the-art-of-linear-algebra" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Facebook
-            </li>
-        </a>
-    
 
     <!-- Share Google+ -->
-    
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://zeekliu.github.io/math/the-art-of-linear-algebra" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Google+
-            </li>
-        </a>
     
 
     <!-- Share LinkedIn -->
@@ -624,10 +613,12 @@ mjx-container[display="true"] + br {
 <p>帮助者：Gilbert Strang</p>
 <p>翻译者：Kefang Liu</p>
 </blockquote>
-<h4 id="本站-PDF："><a href="#本站-PDF：" class="headerlink" title="本站 PDF："></a>本站 PDF：</h4><p>本站存档：<a href="/pdf/The-Art-of-Linear-Algebra-zh-CN.pdf">线性代数的艺术：中文版本</a></p>
+<h4 id="本站-pdf"><a class="markdownIt-Anchor" href="#本站-pdf"></a> 本站 PDF：</h4>
+<p>本站存档：<a href="/pdf/The-Art-of-Linear-Algebra-zh-CN.pdf">线性代数的艺术：中文版本</a></p>
 <p>本站存档：<a href="/pdf/The-Art-of-Linear-Algebra.pdf">The Art of Linear Algebra: English Edition</a></p>
 <p>日语版就不推了，有兴趣可以自己看。</p>
-<h4 id="GitHub-Repositories"><a href="#GitHub-Repositories" class="headerlink" title="GitHub Repositories:"></a>GitHub Repositories:</h4><p>GitHub (jp)：<a target="_blank" rel="noopener" href="https://github.com/kf-liu/The-Art-of-Linear-Algebra-zh-CN/blob/main/The-Art-of-Linear-Algebra-j.pdf">https://github.com/kf-liu/The-Art-of-Linear-Algebra-zh-CN/blob/main/The-Art-of-Linear-Algebra-j.pdf</a></p>
+<h4 id="github-repositories"><a class="markdownIt-Anchor" href="#github-repositories"></a> GitHub Repositories:</h4>
+<p>GitHub (jp)：<a target="_blank" rel="noopener" href="https://github.com/kf-liu/The-Art-of-Linear-Algebra-zh-CN/blob/main/The-Art-of-Linear-Algebra-j.pdf">https://github.com/kf-liu/The-Art-of-Linear-Algebra-zh-CN/blob/main/The-Art-of-Linear-Algebra-j.pdf</a></p>
 <p>GihHub (zh-CN)：<a target="_blank" rel="noopener" href="https://github.com/kf-liu/The-Art-of-Linear-Algebra-zh-CN/blob/main/The-Art-of-Linear-Algebra-zh-CN.pdf">https://github.com/kf-liu/The-Art-of-Linear-Algebra-zh-CN/blob/main/The-Art-of-Linear-Algebra-zh-CN.pdf</a></p>
 <p>GitHub (en)：<a target="_blank" rel="noopener" href="https://github.com/kf-liu/The-Art-of-Linear-Algebra-zh-CN/blob/main/The-Art-of-Linear-Algebra.pdf">https://github.com/kf-liu/The-Art-of-Linear-Algebra-zh-CN/blob/main/The-Art-of-Linear-Algebra.pdf</a></p>
 <hr>
@@ -995,6 +986,9 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
+
+    <!-- Busuanzi -->
+    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
