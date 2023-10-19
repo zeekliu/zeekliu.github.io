@@ -42,25 +42,32 @@
       </tags>
   </entry>
   <entry>
-    <title>加密文章测试</title>
-    <url>/test/password-test.html</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="afbc6f11416c0285a9e937867ac857fc494bb98dd345cc79d4cc1cc753640766">4630436162ade97ba2718b7d0c4b3b633edd16a8c78b7d4a375abf0237cd065b91751a61765f7ac56f2dc754cdc59bdece543ea5ee84c32a642bd093fac58456166e8b1de82ce87419a1d480cbddd0f9cf3454f804e92ac679db44e150c064862fc372d750ef0da47ab0f5dd257187b7714242dab0e616bf97cc13633d23f548</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    <title>推荐：《线性代数的艺术》</title>
+    <url>/math/the-art-of-linear-algebra.html</url>
+    <content><![CDATA[<p><strong>讲义属实很不错，图片较多，易于理解，内含讲义 PDF。</strong></p>
+<!--more--->
+<p>线性代数讲义，12 页，不算长，但讲解的很清楚。</p>
+<blockquote>
+<p>作者：Kenji Hiranabe（けんじひらなべ）</p>
+<p>帮助者：Gilbert Strang</p>
+<p>翻译者：Kefang Liu</p>
+</blockquote>
+<h4 id="本站-pdf"><a class="markdownIt-Anchor" href="#本站-pdf"></a> 本站 PDF：</h4>
+<p>本站存档：<a href="/pdf/The-Art-of-Linear-Algebra-zh-CN.pdf">线性代数的艺术：中文版本</a></p>
+<p>本站存档：<a href="/pdf/The-Art-of-Linear-Algebra.pdf">The Art of Linear Algebra: English Edition</a></p>
+<p>日语版就不推了，有兴趣可以自己看。</p>
+<h4 id="github-repositories"><a class="markdownIt-Anchor" href="#github-repositories"></a> GitHub Repositories:</h4>
+<p>GitHub (jp)：<a href="https://github.com/kf-liu/The-Art-of-Linear-Algebra-zh-CN/blob/main/The-Art-of-Linear-Algebra-j.pdf">https://github.com/kf-liu/The-Art-of-Linear-Algebra-zh-CN/blob/main/The-Art-of-Linear-Algebra-j.pdf</a></p>
+<p>GihHub (zh-CN)：<a href="https://github.com/kf-liu/The-Art-of-Linear-Algebra-zh-CN/blob/main/The-Art-of-Linear-Algebra-zh-CN.pdf">https://github.com/kf-liu/The-Art-of-Linear-Algebra-zh-CN/blob/main/The-Art-of-Linear-Algebra-zh-CN.pdf</a></p>
+<p>GitHub (en)：<a href="https://github.com/kf-liu/The-Art-of-Linear-Algebra-zh-CN/blob/main/The-Art-of-Linear-Algebra.pdf">https://github.com/kf-liu/The-Art-of-Linear-Algebra-zh-CN/blob/main/The-Art-of-Linear-Algebra.pdf</a></p>
+<hr>
+<p>总之，通俗易懂，是一篇很棒的讲义，值得一看。</p>
+]]></content>
       <categories>
-        <category>test</category>
+        <category>math</category>
       </categories>
       <tags>
-        <tag>Test</tag>
+        <tag>数学</tag>
       </tags>
   </entry>
   <entry>
@@ -100,32 +107,25 @@ Zeekliu
       </tags>
   </entry>
   <entry>
-    <title>推荐：《线性代数的艺术》</title>
-    <url>/math/the-art-of-linear-algebra.html</url>
-    <content><![CDATA[<p><strong>讲义属实很不错，图片较多，易于理解，内含讲义 PDF。</strong></p>
-<!--more--->
-<p>线性代数讲义，12 页，不算长，但讲解的很清楚。</p>
-<blockquote>
-<p>作者：Kenji Hiranabe（けんじひらなべ）</p>
-<p>帮助者：Gilbert Strang</p>
-<p>翻译者：Kefang Liu</p>
-</blockquote>
-<h4 id="本站-pdf"><a class="markdownIt-Anchor" href="#本站-pdf"></a> 本站 PDF：</h4>
-<p>本站存档：<a href="/pdf/The-Art-of-Linear-Algebra-zh-CN.pdf">线性代数的艺术：中文版本</a></p>
-<p>本站存档：<a href="/pdf/The-Art-of-Linear-Algebra.pdf">The Art of Linear Algebra: English Edition</a></p>
-<p>日语版就不推了，有兴趣可以自己看。</p>
-<h4 id="github-repositories"><a class="markdownIt-Anchor" href="#github-repositories"></a> GitHub Repositories:</h4>
-<p>GitHub (jp)：<a href="https://github.com/kf-liu/The-Art-of-Linear-Algebra-zh-CN/blob/main/The-Art-of-Linear-Algebra-j.pdf">https://github.com/kf-liu/The-Art-of-Linear-Algebra-zh-CN/blob/main/The-Art-of-Linear-Algebra-j.pdf</a></p>
-<p>GihHub (zh-CN)：<a href="https://github.com/kf-liu/The-Art-of-Linear-Algebra-zh-CN/blob/main/The-Art-of-Linear-Algebra-zh-CN.pdf">https://github.com/kf-liu/The-Art-of-Linear-Algebra-zh-CN/blob/main/The-Art-of-Linear-Algebra-zh-CN.pdf</a></p>
-<p>GitHub (en)：<a href="https://github.com/kf-liu/The-Art-of-Linear-Algebra-zh-CN/blob/main/The-Art-of-Linear-Algebra.pdf">https://github.com/kf-liu/The-Art-of-Linear-Algebra-zh-CN/blob/main/The-Art-of-Linear-Algebra.pdf</a></p>
-<hr>
-<p>总之，通俗易懂，是一篇很棒的讲义，值得一看。</p>
-]]></content>
+    <title>加密文章测试</title>
+    <url>/test/password-test.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="afbc6f11416c0285a9e937867ac857fc494bb98dd345cc79d4cc1cc753640766">4630436162ade97ba2718b7d0c4b3b633edd16a8c78b7d4a375abf0237cd065b91751a61765f7ac56f2dc754cdc59bdece543ea5ee84c32a642bd093fac58456166e8b1de82ce87419a1d480cbddd0f9cf3454f804e92ac679db44e150c064862fc372d750ef0da47ab0f5dd257187b7714242dab0e616bf97cc13633d23f548</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
-        <category>math</category>
+        <category>test</category>
       </categories>
       <tags>
-        <tag>数学</tag>
+        <tag>Test</tag>
       </tags>
   </entry>
   <entry>

@@ -7,6 +7,7 @@
 
 pre {
     background-color: #282923 !important;
+    font-family: Menlo, Mono, Consolas !important;
     font-size: 15px !important;
     color: #E8E8E2 !important;
     counter-reset: line;
@@ -15,9 +16,12 @@ pre {
 
 .hljs {
   background: #1E1E1E;
+  font-family: Menlo, Mono, Consolas !important;
+  border: 0 !important;
   color: #F8F8F2 !important;
   margin: 0 0 0 0 !important;
   padding-left: 0 !important;
+
 }
 
 
@@ -32,7 +36,7 @@ pre li:before {
     display: inline-block; /* 实现Visual Studio行号右对齐的效果 */
     text-align: right; /* 实现Visual Studio行号右对齐的效果 */
     min-width: 3em; /* 文章中行号一般不会超过两位数，所以设定行号区的宽度为两个数字 */
-    margin-left: -8em; /* -8 时可快捷隐藏行号，-6 可以快速显示行号  */
+    margin-left: -9em; /* -9 时可快捷隐藏行号，-6 可以快速显示行号  */
     margin-right: 2em; /* 行号和代码有一个字符的间隔 */
     color: #2b91af; /* Visual Studio的行号颜色 */
 }
@@ -62,7 +66,7 @@ pre li:before {
 
 .hljs-number,
 .hljs-class {
-  color: #A77DF2;
+  color: #12D16E;
 }
 
 .hljs-string,
@@ -100,7 +104,7 @@ pre li:before {
 .hljs-meta .hljs-keyword,
 
 .hljs-tag {
-  color: #12D16E;
+  color: #A77DF2;
 }
 
 .hljs-variable,
