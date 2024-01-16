@@ -1,42 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Code Test</title>
-    <url>/test/code.html</url>
-    <content><![CDATA[<pre class="highlight"><code class="cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;bits/stdc++.h&gt;</span></span>
-<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;
-<span class="hljs-meta">#<span class="hljs-keyword">define</span> int long long</span>
-
-<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
-</span>{
-    ios::<span class="hljs-built_in">sync_with_stdio</span>(<span class="hljs-number">0</span>);
-    cin.<span class="hljs-built_in">tie</span>(<span class="hljs-number">0</span>); cout.<span class="hljs-built_in">tie</span>(<span class="hljs-number">0</span>);
-    <span class="hljs-type">int</span> n;
-    cin&gt;&gt;n;
-    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i=<span class="hljs-number">1</span>;i&lt;=n;i++) n*=n;
-    <span class="hljs-keyword">while</span> (n==<span class="hljs-number">0</span>) { <span class="hljs-keyword">break</span>; <span class="hljs-keyword">continue</span>; }
-    cout&lt;&lt;n&lt;&lt;endl;
-    string s=<span class="hljs-string">"string"</span>;
-    <span class="hljs-type">char</span> c=<span class="hljs-string">'c'</span>;
-    n=<span class="hljs-built_in">min</span>(n,<span class="hljs-number">0</span>)
-    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%f\n"</span>,n);
-    <span class="hljs-comment">/* Comment 注释 */</span>
-    <span class="hljs-built_in">exit</span>(<span class="hljs-number">0</span>);
-}
-</code></pre>
-<!--more--->
-<pre class="highlight"><code class="textile">GitHub Pages
-Zeekliu
-</code></pre>
-]]></content>
-      <categories>
-        <category>test</category>
-      </categories>
-      <tags>
-        <tag>Test</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Test</title>
     <url>/test/test.html</url>
     <content><![CDATA[<p>Test</p>
@@ -68,6 +32,42 @@ Zeekliu
 <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
 </span>{
 }
+</code></pre>
+]]></content>
+      <categories>
+        <category>test</category>
+      </categories>
+      <tags>
+        <tag>Test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Code Test</title>
+    <url>/test/code.html</url>
+    <content><![CDATA[<pre class="highlight"><code class="cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;bits/stdc++.h&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;
+<span class="hljs-meta">#<span class="hljs-keyword">define</span> int long long</span>
+
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    ios::<span class="hljs-built_in">sync_with_stdio</span>(<span class="hljs-number">0</span>);
+    cin.<span class="hljs-built_in">tie</span>(<span class="hljs-number">0</span>); cout.<span class="hljs-built_in">tie</span>(<span class="hljs-number">0</span>);
+    <span class="hljs-type">int</span> n;
+    cin&gt;&gt;n;
+    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i=<span class="hljs-number">1</span>;i&lt;=n;i++) n*=n;
+    <span class="hljs-keyword">while</span> (n==<span class="hljs-number">0</span>) { <span class="hljs-keyword">break</span>; <span class="hljs-keyword">continue</span>; }
+    cout&lt;&lt;n&lt;&lt;endl;
+    string s=<span class="hljs-string">"string"</span>;
+    <span class="hljs-type">char</span> c=<span class="hljs-string">'c'</span>;
+    n=<span class="hljs-built_in">min</span>(n,<span class="hljs-number">0</span>)
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%f\n"</span>,n);
+    <span class="hljs-comment">/* Comment 注释 */</span>
+    <span class="hljs-built_in">exit</span>(<span class="hljs-number">0</span>);
+}
+</code></pre>
+<!--more--->
+<pre class="highlight"><code class="textile">GitHub Pages
+Zeekliu
 </code></pre>
 ]]></content>
       <categories>
